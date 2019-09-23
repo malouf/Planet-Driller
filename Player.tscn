@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Player.gd" type="Script" id=1]
+[ext_resource path="res://Drill.tscn" type="PackedScene" id=2]
+
+[node name="Player" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+color = Color( 0.376471, 0.266667, 1, 1 )
+
+[node name="Drill" parent="." instance=ExtResource( 2 )]
+position = Vector2( 0.246911, 40.4933 )
